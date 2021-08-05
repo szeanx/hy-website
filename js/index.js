@@ -48,13 +48,16 @@ t1.staggerFrom(
  0.1
 );
 
+// menu settings
 t1.reverse();
 $(document).on("click", ".menu-toggle", function () {
+ // set visibility to visible so its accessible
  t1.reversed(!t1.reversed());
  $(".overlay").css("visibility", "visible");
 });
 
 $(document).on("click", ".close-btn", function () {
+ // animate then set visibility back to hidden
  t1.reversed(!t1.reversed());
  setTimeout(() => {
   $(".overlay").css("visibility", "hidden");
@@ -66,48 +69,8 @@ $(document).on("click", "li", function () {
  t1.reversed(!t1.reversed());
 });
 
+// parallax effect
 var image = document.getElementsByClassName("hero-img-parallax");
 new simpleParallax(image, {
  scale: 1.8,
 });
-
-// Select all links with hashes
-$('a[href*="#"]')
- // Remove links that don't actually link to anything
- .not('[href="#"]')
- .not('[href="#0"]')
- .click(function (event) {
-  // On-page links
-  if (
-   location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") &&
-   location.hostname == this.hostname
-  ) {
-   // Figure out element to scroll to
-   var target = $(this.hash);
-   target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
-   // Does a scroll target exist?
-   if (target.length) {
-    // Only prevent default if animation is actually gonna happen
-    event.preventDefault();
-    $("html, body").animate(
-     {
-      scrollTop: target.offset().top,
-     },
-     1000,
-     function () {
-      // Callback after animation
-      // Must change focus!
-      var $target = $(target);
-      $target.focus();
-      if ($target.is(":focus")) {
-       // Checking if the target was focused
-       return false;
-      } else {
-       $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
-       $target.focus(); // Set focus again
-      }
-     }
-    );
-   }
-  }
- });
