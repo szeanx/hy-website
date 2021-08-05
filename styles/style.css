@@ -101,6 +101,27 @@
     color: white;
   }
   
+  .media {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 2em;
+    z-index: 2;
+  }
+  
+  .media ul {
+    list-style: none;
+  }
+  
+  .media ul li {
+    padding: 10px 0;
+  }
+  
+  .media ul li a {
+    color: white;
+  }
+  
+  
   .hero-img {
     position: absolute;
     top: 50%;
