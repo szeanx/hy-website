@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  /* hero section */
+  
+  .hero-section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: #0f0f0f;
+  }
+  
+  
+  /* menu toggle */
+  .hero-logo {
+    position: fixed;
+    margin: 2em;
+    font-family: "Cosi Azure";
+    font-style: 16px;
+    font-weight: 900;
+    mix-blend-mode: difference;
+    z-index: 2;
+    color: #fff;
+  }
+
+  .menu-toggle {
+    position: fixed;
+    right: 0;
+    margin: 2em;
+    z-index: 1;
+    color: #fff; 
+    cursor: pointer;
+  }
+  
+  .menu-toggle ion-icon {
+    font-style: 16px;
+    cursor: pointer;
+  }
+  
+
+  .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #0f0f0f;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  
+  .overlay ion-icon {
+    position: fixed;
+    right: 0;
+    margin: 2em;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .overlay ul {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+  }
+  
+  .overlay ul li {
+    font-size: 84px;
+  }
+  
+  @media (max-width: 900px) {
+    .overlay ul li {
+      font-size: 30px;
+      padding: 10px 0;
+    }
+  }
+  
+  .overlay ul li a {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-family: "Times New Roman";
+    text-transform: uppercase !important;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  .overlay ul li a:hover {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .media {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 2em;
+    z-index: 2;
+  }
+  
+  .media ul {
+    list-style: none;
+  }
+  
+  .media ul li {
+    padding: 10px 0;
+  }
+  
+  .media ul li a {
+    color: white;
+  }
+  
+  .view-photos {
+    position: absolute;
+    left: 0;
+    bottom: 1em;
+    margin: 2em;
+    z-index: 2;
+  }
+  
+  .view-photos a {
+    color: white;
+    text-decoration: underline;
+    font-style: italic;
+  }
+  
+  .view-photos a:hover {
+    color: white;
+  }
+  
+  .hero-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+  }
+  
+  .hero-img img {
+    width: 100%;
+    filter: sepia(50%);
+  }
+  
+  .hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .hero-title h1 {
+    font-family: "IBM Plex Sans", sans-serif !important;
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase !important;
+    text-shadow: 3px 3px #000;
+    color: white;
+  }
+  
+  @media (max-width: 900px) {
+    .hero-title .letter {
+      font-size: 23px !important;
+    }
+  }
+  
+  .hero-title .letter {
+    display: inline-block;
+    opacity: 0;
+    font-size: 80px;
+    color: white;
+    font-family: "IBM Plex Sans", sans-serif !important;
+    text-transform: uppercase !important;
+    text-shadow: 3px 3px #000;
+    font-weight: 800;
+  }
+  
+  .about-section {
+    padding: 120px 0;
+  }
+  
+  .about-section h1 {
+    font-size: 84px;
+    font-family: "Times New Roman";
+    text-transform: uppercase;
+  }
+  /* carousel image */
+
+  .carousel-image {
+      height: 50vh;
+  }
+
+  /* sp food experience */
+
+  .experience-food {
+      height: 50vh;
+      margin-top: 10px;
+      filter: sepia(30%);
+  }
+
+  /* responsiveness */
+
+  @media (max-width: 900px) {
+     section.about-section h1 {
+          font-size: 50px;
+      }
+      .experience-food {
+          height: 40vh;
+          padding-bottom: 2em;
+      }
+  }
+
+  @media (max-width: 1200px) and (min-width: 950px) {
+      section.about-section h1 {
+          font-size: 70px;
+      }
+  }
+
+  /* about sections */
+  
+  .about-section h3 {
+    font-family: Helvetica;
+    padding: 8px 0;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  .about-link {
+    margin: 50px 0;
+  }
+  
+  .about-link a {
+    color: black;
+    padding: 18px 36px;
+    border: 1px solid black;
+    font-size: 12px;
+    letter-spacing: 4px;
+  }
+  
+  .about-link a:hover {
+    text-decoration: none;
+    color: white;
+    background: black;
+  }
+
+  /* footer */
+  
+  .social-media {
+    padding: 0 0;
+    margin-top: 120px;
+  }
+  
+  .social-media h1 {
+    font-size: 84px;
+    font-family: "Times New Roman";
+    text-transform: uppercase;
+  }
+  
+  .social-media h3 {
+    font-family: Helvetica;
+    padding: 8px 0;
+    margin-bottom: 20px;
+    font-style: italic;
+    text-decoration: underline;
+  }
+  
+  .social-icons {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .social-icons ul {
+    margin: 80px 0 !important;
+    padding: 0 !important;
+  }
+  
+  .social-icons ul li {
+    display: inline-block;
+    list-style: none;
+    padding-right: 40px;
+  }
+  
+  .social-icons ul li a {
+    color: black;
+    font-style: italic;
+    font-family: "Cormorant";
+  }
+
+  /* page transition loading */
+.loading-screen {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: #eed796;
+    width: 0%;
+    height: 100%;
+}
+
+.load-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 99;
+    pointer-events: none;
+}
+
+/* contact */
+
