@@ -11,6 +11,21 @@
     width: 100%;
   }
 
+  button {
+    background: none;
+    border: 1pt solid #f8f8ff;
+    border-radius: 10% !important;
+    text-transform: uppercase !important;
+    font-size: 12px !important;
+    letter-spacing: 2px;
+    padding: 18px 36px;
+    transition-duration: 0.5s;
+   }
+   
+   button:hover {
+       background-color: #f8f8ff;
+   }
+
   /* hero section */
   
   .hero-section {
@@ -18,7 +33,7 @@
     padding: 0;
     width: 100%;
     height: 100vh;
-    background: #0f0f0f;
+    background: #f8f8ff;
   }
   
   
@@ -39,7 +54,7 @@
     right: 0;
     margin: 2em;
     z-index: 1;
-    color: #fff; 
+    color: #000; 
     cursor: pointer;
   }
   
@@ -53,7 +68,7 @@
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #0f0f0f;
+    background: #f8f8ff;
     z-index: 1;
     opacity: 0;
     visibility: hidden;
@@ -64,7 +79,7 @@
     position: fixed;
     right: 0;
     margin: 2em;
-    color: white;
+    color: #000;
     cursor: pointer;
   }
   
@@ -89,7 +104,7 @@
   
   .overlay ul li a {
     color: transparent;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 1px #000;
     font-family: "Times New Roman";
     text-transform: uppercase !important;
     text-decoration: none;
@@ -98,7 +113,7 @@
   
   .overlay ul li a:hover {
     text-decoration: none;
-    color: white;
+    color: #000;
   }
   
   .media {
@@ -148,7 +163,7 @@
     font-size: 80px;
     font-weight: 800;
     text-transform: uppercase !important;
-    text-shadow: 3px 3px #000;
+    text-shadow: 5px 5px #000;
     color: white;
   }
   
@@ -165,12 +180,18 @@
     color: white;
     font-family: "IBM Plex Sans", sans-serif !important;
     text-transform: uppercase !important;
-    text-shadow: 3px 3px #000;
+    text-shadow: 5px 5px #000;
     font-weight: 800;
   }
+
+  /* about section */
   
   .about-section {
     padding: 120px 0;
+  }
+
+  .about-content span{
+    font-weight: 800;
   }
   
   .about-section h1 {
@@ -280,27 +301,69 @@
     font-family: "Cormorant";
   }
 
-  /* page transition loading */
-.loading-screen {
-    position: relative;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    background-color: #eed796;
-    width: 0%;
-    height: 100%;
+/* feedback */
+
+#feedback-form {
+  margin: 5% 0;
 }
 
-.load-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: 99;
-    pointer-events: none;
+.feedback .icon-title{
+  margin-top: 10px;
+  color: #000
 }
 
-/* contact */
+#feedback-form ul {
+  list-style: none;
+  margin-bottom: 40px;
+  border-radius: 0;
+}
 
+.feedback h3 {
+  font-family: "IBM Plex Sans";
+}
+
+#feedback-form li:last-of-type {
+  border-bottom: none;
+}
+
+#feedback-form label {
+  display: block;
+  font-size: 22px;
+  font-family: "IBM Plex Sans";
+  font-weight: 400;
+  color: #000;
+}
+
+#feedback-form input, #feedback-form textarea {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  resize: vertical;
+  background: transparent;
+  color: #000;
+  font-weight: 400;
+}
+
+input:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+textarea:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.textarea {
+  border-bottom: 1px solid #e0e0e6;
+}
+
+
+
+@media (max-width: 900px) {
+  #feedback-form {
+    margin: 5% 0;
+
+    width: 97%;
+  }
+}

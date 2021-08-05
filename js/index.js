@@ -74,3 +74,8 @@ var image = document.getElementsByClassName("hero-img-parallax");
 new simpleParallax(image, {
  scale: 1.8,
 });
+
+// value counter for slider
+function updateTextInput(val) {
+ document.getElementById("valueCounter").value = val;
+}
