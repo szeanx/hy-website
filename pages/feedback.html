@@ -126,7 +126,7 @@
      <div class="row">
       <div class="col-md-4"></div>
       <div class="col-md-6">
-       <form action="" name="feedback-form" id="feedback-form" method="POST">
+       <form action="URL" name="feedback-form" id="feedback-form" method="POST">
         <ul>
          <li class="wow fadeInUp" data-wow-delay="0.6s">
           <label for="question-1">Name: </label>
@@ -141,32 +141,34 @@
           </div>
          </li>
 
-         <br />
-
          <li class="wow fadeInUp" data-wow-delay="0.7s">
           <label for="question-2">Email: </label>
           <div class="textarea">
-           <input type="email" name="question-2" id="question-2 value=""
-           required />
+           <input
+            type="email"
+            name="question-2"
+            id="question-2"
+            value=""
+            required
+           />
           </div>
          </li>
-
-         <br />
 
          <li class="wow fadeInUp" data-wow-delay="0.7s">
           <label for="question-3">Why are you looking at this page?</label>
           <div>
            <select
             name="question-3"
-            id="question-3 value="
+            id="question-3"
             class="form-select"
             required
            >
-            <option value="Choice1">I am a prospective SP student</option>
-            <option value="Choice2">
+            <option value="">Please choose an option</option>
+            <option value="first-choice">I am a prospective SP student</option>
+            <option value="second-choice">
              I am a family member of a prospective student
             </option>
-            <option value="Choice3">
+            <option value="third-choice">
              I am neither of the above options and just want to gain more
              insight on SP
             </option>
@@ -174,19 +176,20 @@
           </div>
          </li>
 
-         <br />
-
          <li class="wow fadeInUp" data-wow-delay="0.7s">
           <label for="question-4"
            >Was the website aesthetically pleasing?</label
           >
           <div class="textarea">
-           <input type="text" name="question-4" id="question-4 value="" required
+           <input
+            type="text"
+            name="question-4"
+            id="question-4"
+            value=""
+            required
            />
           </div>
          </li>
-
-         <br />
 
          <li class="wow fadeInUp" data-wow-delay="0.6s">
           <label for="question-5">How can we make this page better?</label>
@@ -200,8 +203,6 @@
            />
           </div>
          </li>
-
-         <br />
 
          <li class="wow fadeInUp" data-wow-delay="0.6s">
           <label for="question-6"
@@ -218,15 +219,12 @@
             min="0"
             max="10"
             onchange="updateTextInput(this.value);"
-            required
            />
           </div>
           <strong
            ><input type="text" id="valueCounter" value="" disabled readonly
           /></strong>
          </li>
-
-         <br />
 
          <li class="wow fadeInUp" data-wow-delay="0.8s">
           <label for="contact-project">Any other feedback or comments?</label>

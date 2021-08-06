@@ -36,19 +36,6 @@
     background: #f8f8ff;
   }
   
-  
-  /* menu toggle */
-  .hero-logo {
-    position: fixed;
-    margin: 2em;
-    font-family: "Cosi Azure";
-    font-style: 16px;
-    font-weight: 900;
-    mix-blend-mode: difference;
-    z-index: 2;
-    color: #fff;
-  }
-
   .menu-toggle {
     position: fixed;
     right: 0;
@@ -59,7 +46,7 @@
   }
   
   .menu-toggle ion-icon {
-    font-style: 16px;
+    font-size: 16px;
     cursor: pointer;
   }
   
